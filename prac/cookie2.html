@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <script>
+            let setExpiryDate = ()=>{
+                let expDate = new Date();
+                expDate.setMonth(expDate.getMonth()-1);
+                document.cookie="name=aryan;expires="+expDate.toUTCString();
+                alert(document.cookie);
+
+            }
+        </script>
+    </head>
+</html>

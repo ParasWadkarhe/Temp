@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Checkbox evaluation </title>
+        <script>
+            function check(){
+                var msg="your fav colors are ";
+                var obj=document.getElementById("form1");
+
+                if(obj.checked == true){
+                x+=obj.color1.value+" ";}
+                if(obj.checked == true){
+                x+=obj.color2.value+" ";}
+                if(obj.checked == true){
+                x+=obj.color3.value+" ";}
+                if(obj.checked == true){
+                x+=obj.color4.value+" ";}
+
+                alert(msg);
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <form name="form1">
+            <input type="checkbox" name="color1" value="green"><label>green</label>
+            <input type="checkbox" name="color2" value="purple"><label>purple</label>
+            <input type="checkbox" name="color3" value="black"><label>black</label>
+            <input type="checkbox" name="color4" value="yellow"><label>yellow</label>
+            <input type="button" value="submit" onclick="check()">
+        </form>
+    </body>
+</html>

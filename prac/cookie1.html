@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            const createCookie = ()=>{
+                document.cookie="name=aryan";
+                 document.cookie="age=18 ";
+                 document.cookie="eyecolor=brown";;
+                alert("Cookie created");
+            }
+
+           const displayCookie = ()=>{
+
+            if(document.cookie.length != 0){
+            let Cookies = document.cookie;
+            alert(Cookies)
+            let CookieArray = Cookies.split(";");
+
+            for(i=0;i<CookieArray.length;++i){
+               let  name=CookieArray[i].split("=")[0];
+               let value=CookieArray[i].split("=")[1];
+
+                document.write(name+" = "+value+"</br>")
+                 }
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="create" onclick="createCookie()"/>
+        <input type="button" value="display" onclick="displayCookie()"/>
+
+    </body>
+</html>
